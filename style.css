@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,700&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Classic, yet more readable font */
+    background-image: url('img/back.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    background-color: #f0f0f0; 
+}
+
+header {
+    background-color: #d10000; /* Red */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3em; /* Larger for emphasis */
+}
+
+h3 { 
+    font-style: italic;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+    padding: 20px;
+}
+
+.card {
+    border: 2px solid #d10000; /* Red */
+    border-radius: 10px; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 30px; 
+    width: 70%; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 30px; 
+    text-align: center; /* Center text */
+}
+
+.card p {
+    margin: 0;
+    color: #333;
+    font-size: 1.8em; /* Significantly larger font size */
+    font-weight: bold; /* Bold text */
+    font-style: italic; /* Italic text */
+}
+
+.card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3); 
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 80%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 90%; 
+        padding: 20px;
+        font-size: 1.4em; /* Adjust font size for very small screens */
+    }
+}
+
+.contact-section {
+    text-align: center; /* Centrer le texte */
+    padding: 40px 20px; /* Padding pour espacer le texte */
+    font-size: 1.4em; /* Taille de la police augmentée */
+    font-style: italic; /* Italic pour une touche de style */
+    color: white; /* Couleur du texte en blanc */
+    background-color: #333; /* Fond foncé */
+    width: 100%; /* Prend toute la largeur de la page */
+    margin-top: 40px; /* Espacer du contenu précédent */
+    border-top: 2px solid #d10000; /* Ligne de séparation en haut, en rouge */
+}
